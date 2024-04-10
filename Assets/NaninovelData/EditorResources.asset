@@ -166,3 +166,18 @@ MonoBehaviour:
     - name: ToastUI
       pathPrefix: UI
       guid: dd85ce99288c2f8488447fa511b1c0d6
+  - Id: Scripts
+    Resources:
+    - name: TempScript1
+      pathPrefix: Scripts
+      guid: 531c767e0fac56d4faa1bd454471930a
+  - Id: Characters/89b83e95-e001-4aaa-8208-ca4f35843d4f
+    Resources:
+    - name: Default
+      pathPrefix: Characters/Wow
+      guid: 6c86db723925bce4eb9cb77402e3d0fa
+  - Id: Characters/4170401d-a6f9-4da2-b090-b0059e485319
+    Resources:
+    - name: Default
+      pathPrefix: Characters/Pica
+      guid: f4ce09419057bbf4ca39db19eaf34630
