@@ -96,8 +96,8 @@ MonoBehaviour:
       BakedLookDirection: 1
       DisplayName: "\uC640\uC6B0"
       UseCharacterColor: 1
-      NameColor: {r: 0.098039225, g: 0.15294118, b: 0.24705884, a: 1}
-      MessageColor: {r: 0.098039225, g: 0.15294118, b: 0.24705884, a: 1}
+      NameColor: {r: 0.4008989, g: 0.6050507, b: 0.9339623, a: 1}
+      MessageColor: {r: 0.6762638, g: 0.7434, b: 0.8584906, a: 1}
       HighlightWhenSpeaking: 0
       HighlightCharacterCount: 0
       SpeakingPose: 
