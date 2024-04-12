@@ -528,7 +528,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1748221161}
   - {fileID: 1336643435}
   - {fileID: 1305126988}
   - {fileID: 916110651}
@@ -536,6 +535,7 @@ RectTransform:
   - {fileID: 762353544}
   - {fileID: 748634511}
   - {fileID: 2045218105}
+  - {fileID: 1748221161}
   m_Father: {fileID: 72169602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
@@ -582,7 +582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TMP_Time: {fileID: 931308467}
-  isSecond: 0
+  womanSeat: -1
 --- !u!1 &531006600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,11 +1183,11 @@ MonoBehaviour:
       - m_Target: {fileID: 748634512}
         m_TargetAssemblyTypeName: EachSeat, Assembly-CSharp
         m_MethodName: ButtonClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1330,11 +1330,11 @@ MonoBehaviour:
       - m_Target: {fileID: 762353545}
         m_TargetAssemblyTypeName: EachSeat, Assembly-CSharp
         m_MethodName: ButtonClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1477,11 +1477,11 @@ MonoBehaviour:
       - m_Target: {fileID: 767118672}
         m_TargetAssemblyTypeName: EachSeat, Assembly-CSharp
         m_MethodName: ButtonClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1624,11 +1624,11 @@ MonoBehaviour:
       - m_Target: {fileID: 916110652}
         m_TargetAssemblyTypeName: EachSeat, Assembly-CSharp
         m_MethodName: ButtonClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1743,8 +1743,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1800,11 +1800,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 72169602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -30}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -25}
+  m_SizeDelta: {x: 400, y: 50}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1305126987
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,11 +1905,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1305126989}
         m_TargetAssemblyTypeName: EachSeat, Assembly-CSharp
         m_MethodName: ButtonClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2052,11 +2052,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1336643436}
         m_TargetAssemblyTypeName: EachSeat, Assembly-CSharp
         m_MethodName: ButtonClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2317,7 +2317,7 @@ GameObject:
   - component: {fileID: 1748221162}
   - component: {fileID: 1748221165}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2390,11 +2390,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1748221165}
         m_TargetAssemblyTypeName: EachSeat, Assembly-CSharp
         m_MethodName: ButtonClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2686,11 +2686,11 @@ MonoBehaviour:
       - m_Target: {fileID: 2045218106}
         m_TargetAssemblyTypeName: EachSeat, Assembly-CSharp
         m_MethodName: ButtonClick
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
