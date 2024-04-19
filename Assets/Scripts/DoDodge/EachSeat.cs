@@ -7,12 +7,12 @@ using UnityEngine.UI;
 public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
 {
 
-    public enum State
+    private enum State
     {
         Sit, Fake, Stand, Woman, Man
     }
+    private State _currentState = State.Sit;
 
-    private State currentState = State.Sit;
     public TMP_Text TMP_State;
 
     private IEnumerator Activate()
@@ -38,13 +38,13 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
     private void Sit()
     {
         TMP_State.text = "Sit";
-        currentState = State.Sit;
+        _currentState = State.Sit;
     }
 
     private IEnumerator Fake()
     {
         TMP_State.text = "Fake";
-        currentState = State.Fake;
+        _currentState = State.Fake;
         yield return new WaitForSeconds(1f);
         Sit(); //1초 대기 후 다시 착석
     }
@@ -52,27 +52,27 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
     private IEnumerator Stand()
     {
         TMP_State.text = "Stand";
-        currentState = State.Stand;
+        _currentState = State.Stand;
         yield return new WaitForSeconds(1f);
         Sit(); //0.5(임시 1초) 대기 후 다시 착석
     }
 
     public void ButtonClick(int seat) //1~8번 버튼마다 버튼 번호 전달받음
     {
-        if (currentState == State.Stand)
+        if (_currentState == State.Stand)
         {
-            StopAllCoroutines(); //버튼 고정
+            DeActivate(); //버튼 고정
             if (MainControl.Inst.womanSeat == -1) //아직 여자가 안 앉았다면
             {
                 MainControl.Inst.womanSeat = seat; //여자 좌석번호 전달
                 TMP_State.text = "Woman";
-                currentState = State.Woman;
+                _currentState = State.Woman;
                 DeActivate();
             }
             else //여자가 이미 앉은 상태(게임 성공)
             {
                 TMP_State.text = "Man";
-                currentState = State.Man;
+                _currentState = State.Man;
                 MainControl.Inst.Clear(seat); //남자 좌석번호 전달
             }
         }
